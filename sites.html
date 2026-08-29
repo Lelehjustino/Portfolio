@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sites - Letícia Dev" />
+  <title>Sites | Letícia Dev</title>
+
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFE066'><path d='M12,2C10.3,2,9,3.3,9,5c0,0.6,0.2,1.2,0.5,1.7C8.1,7.2,7,8.5,7,10v1c0,0.6-0.4,1-1,1H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h0.2c1.1,2.9,4,5,7.3,5c3.5,0,6.5-2.2,7.5-5.3c0.1-0.2,0.1-0.5,0.1-0.7c0-1.7-1.3-3-3-3h-1c-0.6,0-1-0.4-1-1v-1c0-1.7-1.3-3-3-3C10.8,7,11.3,7,12,7c1.7,0,3,1.3,3,3v0.4c0,0.4,0.3,0.8,0.7,0.9c0.7,0.2,1.3-0.3,1.3-1c0-2.8-2.2-5-5-5V2z'/><circle cx='10.5' cy='7.5' r='1' fill='%23374151'/><path d='M14,9c0.6,0,1,0.4,1,1v1h1c0.6,0,1,0.4,1,1H14V9z' fill='%23FFB042'/></svg>" />
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="#FFE066" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12,2C10.3,2,9,3.3,9,5c0,0.6,0.2,1.2,0.5,1.7C8.1,7.2,7,8.5,7,10v1c0,0.6-0.4,1-1,1H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h0.2 c1.1,2.9,4,5,7.3,5c3.5,0,6.5-2.2,7.5-5.3c0.1-0.2,0.1-0.5,0.1-0.7c0-1.7-1.3-3-3-3h-1c-0.6,0-1-0.4-1-1v-1c0-1.7-1.3-3-3-3 C10.8,7,11.3,7,12,7c1.7,0,3,1.3,3,3v0.4c0,0.4,0.3,0.8,0.7,0.9c0.7,0.2,1.3-0.3,1.3-1c0-2.8-2.2-5-5-5V2z" />
+          <circle cx="10.5" cy="7.5" r="1" fill="#374151" />
+          <path
+            d="M13,8.5c0.5,0,1,0.4,1,1v1h2c0.5,0,1,0.4,1,1c0,1.1-1.3,2-2.5,2S11.5,12.6,11.5,11.5c0-0.5,0.4-1,1-1h0.5v-1 C13,8.9,13.4,8.5,13,8.5z"
+            fill="#FFB042" />
+        </svg>
+        <div>
+          <div class="nav-logo-text">Letícia Dev</div>
+          <div style="font-size: 0.75rem; color: var(--clr-text-muted);">Software Developer</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="apps.html" class="nav-link">Apps</a></li>
+        <li><a href="sites.html" class="nav-link" style="color:var(--clr-text); font-weight:500;">Sites</a></li>
+        <li><a href="projetos.html" class="nav-link">Outros Projetos</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Mim</a></li>
+      </ul>
+      <a href="sobre.html#contato" class="nav-cta">Contato</a>
+      <button class="hamburger" id="hamburger-btn"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="apps.html" class="nav-link">Apps</a>
+    <a href="sites.html" class="nav-link" style="color:var(--clr-duck-orange);">Sites</a>
+    <a href="projetos.html" class="nav-link">Outros Projetos</a>
+    <a href="sobre.html" class="nav-link">Sobre Mim</a>
+    <a href="sobre.html#contato" class="nav-link">Contato</a>
+  </div>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="section-tag">Desenvolvimento Web</div>
+      <h1 class="page-header-title">Sites e <span>Portais</span></h1>
+      <p class="page-header-desc">Experiências web limpas, rápidas e amigáveis para todos os dispositivos.</p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="cards-grid">
+
+        <!-- E -commerce - -->
+        <article class="card-projeto">
+
+          <div class="card-img-wrap">
+            <img src="img/projetos/ecommerce.jpg" alt="Projeto E-commerce">
+          </div>
+
+          <div class="card-body">
+
+            <h3 class="card-title">E-commerce</h3>
+
+            <p class="card-desc">
+              Sistema completo de loja virtual desenvolvido com PHP + MySQL, com painel de administrador, área do
+              cliente, carrinho de compras e gerenciamento de produtos.
+            </p>
+
+            <div class="tech-badges">
+              <span class="badge">PHP</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+              <span class="badge">XAMPP</span>
+              <span class="badge">Session</span>
+              <span class="badge">SQL</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/Lelehjustino/E-commerce_roupas" class="btn btn-ghost btn-sm">
+                GitHub
+              </a>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Tesla -->
+        <article class="card-projeto">
+
+          <div class="card-img-wrap">
+            <img src="img/projetos/tesla.png" alt="Projeto Tesla">
+          </div>
+
+          <div class="card-body">
+
+            <h3 class="card-title">Tesla</h3>
+
+            <p class="card-desc">
+              Eu criei um site onde os usuários podem explorar e comprar os modelos de carros da Tesla de maneira
+              prática e interativa. Com um design simples e intuitivo, o site oferece informações sobre cada veículo,
+              como preço. Este projeto tem como objetivo proporcionar uma experiência moderna e eficiente para quem
+              deseja adquirir um Tesla de forma rápida e segura.
+            </p>
+
+            <div class="tech-badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/Lelehjustino/Projeto-tesla" class="btn btn-ghost btn-sm">
+                GitHub
+              </a>
+
+              <a href="https://venerable-gaufre-eff49f.netlify.app/" class="btn btn-primary btn-sm">
+                Visitar Site
+              </a>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Instagram -->
+        <article class="card-projeto">
+
+          <div class="card-img-wrap">
+            <img src="img/projetos/instagram.png" alt="Projeto Instagram">
+          </div>
+
+          <div class="card-body">
+
+            <h3 class="card-title">Instagram</h3>
+
+            <p class="card-desc">
+              O objetivo deste projeto é criar uma réplica funcional da página de login do Instagram utilizando HTML,
+              CSS e JavaScript. O foco principal é replicar a interface e o comportamento básicos da página, como os
+              campos de entrada, botões, e layout, sem envolver qualquer funcionalidade de backend.
+            </p>
+
+            <div class="tech-badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/Lelehjustino/ProjetoInstagram" class="btn btn-ghost btn-sm">
+                GitHub
+              </a>
+
+              <a href="https://exquisite-marzipan-970aa6.netlify.app/" class="btn btn-primary btn-sm">
+                Visitar Site
+              </a>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- Netflix -->
+        <article class="card-projeto">
+
+          <div class="card-img-wrap">
+            <img src="img/projetos/netflix.png" alt="Projeto Netflix">
+          </div>
+
+          <div class="card-body">
+
+            <h3 class="card-title">Netflix</h3>
+
+            <p class="card-desc">
+              Projeto que oferece uma experiência de streaming semelhante à Netflix, com
+              foco em filmes em cartaz e conteúdo de áudio e vídeo de alta qualidade! Este projeto visa trazer uma
+              experiência de entretenimento única para quem busca sempre estar atualizado com os melhores lançamentos.
+              Vamos juntos explorar o futuro do cinema digital. A plataforma foi desenvolvida com um design moderno e
+              fácil de usar, permitindo que os usuários assistam aos lançamentos de forma prática e imersiva.
+            </p>
+
+            <div class="tech-badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/Lelehjustino/Netflix-" class="btn btn-ghost btn-sm">
+                GitHub
+              </a>
+
+              <a href="https://polite-speculoos-9461c6.netlify.app/" class="btn btn-primary btn-sm">
+                Visitar Site
+              </a>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Mario -->
+        <article class="card-projeto">
+
+          <div class="card-img-wrap">
+            <img src="img/projetos/mario.png" alt="Projeto Mario">
+          </div>
+
+          <div class="card-body">
+
+            <h3 class="card-title">Mario</h3>
+
+            <p class="card-desc">
+              Criei um programa que fornece o serviço dos encanadores Mario & Luigi. Onde o site os apresenta e clicando
+              em "Fale conosco" você entra em contato com eles.
+            </p>
+
+            <div class="tech-badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/Lelehjustino/ProjetoMario" class="btn btn-ghost btn-sm">
+                GitHub
+              </a>
+
+              <a href="https://dazzling-manatee-150459.netlify.app/" class="btn btn-primary btn-sm">
+                Visitar Site
+              </a>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Starbucks -->
+        <article class="card-projeto">
+
+          <div class="card-img-wrap">
+            <img src="img/projetos/starbucks.png" alt="Projeto Starbucks">
+          </div>
+
+          <div class="card-body">
+
+            <h3 class="card-title">Starbucks</h3>
+
+            <p class="card-desc">
+              Este projeto é uma página da web inspirada na famosa cadeia de cafeterias Starbucks. A
+              página apresenta a marca, seus valores e um convite para que os visitantes façam seus pedidos. Utiliza
+              HTML, CSS e JS para estruturar, estilizar e dar vida a apresentação.
+            </p>
+
+            <div class="tech-badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://github.com/Lelehjustino/Starbucks" class="btn btn-ghost btn-sm">
+                GitHub
+              </a>
+
+              <a href="https://github.com/Lelehjustino/Starbucks/" class="btn btn-primary btn-sm">
+                Visitar Site
+              </a>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem;">
+            <svg class="duck-icon" viewBox="0 0 24 24" fill="#FFE066" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12,2C10.3,2,9,3.3,9,5c0,0.6,0.2,1.2,0.5,1.7C8.1,7.2,7,8.5,7,10v1c0,0.6-0.4,1-1,1H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h0.2 c1.1,2.9,4,5,7.3,5c3.5,0,6.5-2.2,7.5-5.3c0.1-0.2,0.1-0.5,0.1-0.7c0-1.7-1.3-3-3-3h-1c-0.6,0-1-0.4-1-1v-1c0-1.7-1.3-3-3-3 C10.8,7,11.3,7,12,7c1.7,0,3,1.3,3,3v0.4c0,0.4,0.3,0.8,0.7,0.9c0.7,0.2,1.3-0.3,1.3-1c0-2.8-2.2-5-5-5V2z" />
+              <circle cx="10.5" cy="7.5" r="1" fill="#374151" />
+              <path
+                d="M13,8.5c0.5,0,1,0.4,1,1v1h2c0.5,0,1,0.4,1,1c0,1.1-1.3,2-2.5,2S11.5,12.6,11.5,11.5c0-0.5,0.4-1,1-1h0.5v-1 C13,8.9,13.4,8.5,13,8.5z"
+                fill="#FFB042" />
+            </svg>
+            <span style="font-weight: 600;">Letícia Dev</span>
+          </div>
+          <p class="footer-tagline">Mantendo o código limpo e o café quente.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">Contato</h3>
+          <div class="footer-links">
+            <a href="https://github.com/Lelehjustino" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/let%C3%ADcia-justino-wehbe-wehbe/" target="_blank">LinkedIn</a>
+            <a href="mailto:lehjustinowehbe@gmail.com">lehjustinowehbe@gmail.com</a>
+            <a href="https://wa.me/5541987945188" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="footer-year"></span> - Feito com carinho.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

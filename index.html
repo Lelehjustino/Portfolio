@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfólio profissional de Letícia. Desenvolvimento com propósito, código limpo e muita dedicação." />
+    <title>Portfólio | Desenvolvedora de Software</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFE066'><path d='M12,2C10.3,2,9,3.3,9,5c0,0.6,0.2,1.2,0.5,1.7C8.1,7.2,7,8.5,7,10v1c0,0.6-0.4,1-1,1H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h0.2c1.1,2.9,4,5,7.3,5c3.5,0,6.5-2.2,7.5-5.3c0.1-0.2,0.1-0.5,0.1-0.7c0-1.7-1.3-3-3-3h-1c-0.6,0-1-0.4-1-1v-1c0-1.7-1.3-3-3-3C10.8,7,11.3,7,12,7c1.7,0,3,1.3,3,3v0.4c0,0.4,0.3,0.8,0.7,0.9c0.7,0.2,1.3-0.3,1.3-1c0-2.8-2.2-5-5-5V2z'/><circle cx='10.5' cy='7.5' r='1' fill='%23374151'/><path d='M14,9c0.6,0,1,0.4,1,1v1h1c0.6,0,1,0.4,1,1H14V9z' fill='%23FFB042'/></svg>" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="#FFE066" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12,2C10.3,2,9,3.3,9,5c0,0.6,0.2,1.2,0.5,1.7C8.1,7.2,7,8.5,7,10v1c0,0.6-0.4,1-1,1H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h0.2 c1.1,2.9,4,5,7.3,5c3.5,0,6.5-2.2,7.5-5.3c0.1-0.2,0.1-0.5,0.1-0.7c0-1.7-1.3-3-3-3h-1c-0.6,0-1-0.4-1-1v-1c0-1.7-1.3-3-3-3 C10.8,7,11.3,7,12,7c1.7,0,3,1.3,3,3v0.4c0,0.4,0.3,0.8,0.7,0.9c0.7,0.2,1.3-0.3,1.3-1c0-2.8-2.2-5-5-5V2z" />
+                    <circle cx="10.5" cy="7.5" r="1" fill="#374151" />
+                    <path
+                        d="M13,8.5c0.5,0,1,0.4,1,1v1h2c0.5,0,1,0.4,1,1c0,1.1-1.3,2-2.5,2S11.5,12.6,11.5,11.5c0-0.5,0.4-1,1-1h0.5v-1 C13,8.9,13.4,8.5,13,8.5z"
+                        fill="#FFB042" />
+                </svg>
+                <div>
+                    <div class="nav-logo-text">Letícia Dev</div>
+                    <div style="font-size: 0.75rem; color: var(--clr-text-muted);">Software Developer</div>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li><a href="apps.html" class="nav-link" id="nav-apps">Apps</a></li>
+                <li><a href="sites.html" class="nav-link" id="nav-sites">Sites</a></li>
+                <li><a href="projetos.html" class="nav-link" id="nav-projetos">Outros Projetos</a></li>
+                <li><a href="sobre.html" class="nav-link" id="nav-sobre">Sobre Mim</a></li>
+            </ul>
+            <a href="sobre.html#contato" class="nav-cta" id="nav-cta-btn">Contato</a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="nav-mobile" id="nav-mobile">
+        <a href="index.html" class="nav-link" id="mob-home">Home</a>
+        <a href="apps.html" class="nav-link" id="mob-apps">Apps</a>
+        <a href="sites.html" class="nav-link" id="mob-sites">Sites</a>
+        <a href="projetos.html" class="nav-link" id="mob-projetos">Outros Projetos</a>
+        <a href="sobre.html" class="nav-link" id="mob-sobre">Sobre Mim</a>
+        <a href="sobre.html#contato" class="nav-link" id="mob-contato"
+            style="font-weight: 500; color: var(--clr-duck-orange);">Contato</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+
+                    <h1 class="hero-title">
+                        Oii, eu sou a<br />
+                        Letícia
+                    </h1>
+                    <p class="hero-role">Desenvolvedora de Software</p>
+                    <p class="hero-desc">
+                        Atuo no desenvolvimento Mobile, criando projetos que unem
+                        tecnologia, criatividade e soluções para problemas reais. Este portfólio é um pouco do que venho
+                        construindo, aprendendo e descobrindo ao longo dessa jornada.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="projetos.html" class="btn btn-primary">Ver Projetos</a>
+                        <a href="sobre.html#contato" class="btn btn-ghost">Contato</a>
+                    </div>
+                </div>
+
+                <div class="hero-photo-wrap">
+                    <img src="img/perfil.png" alt="Foto de Letícia" class="hero-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTAQUE SECTION -->
+    <section class="section" id="destaque" style="background: var(--clr-bg-2);">
+        <div class="container">
+            <header class="section-header">
+                <div class="section-tag">Meus Projetos Favoritos</div>
+                <h2 class="section-title"><span>Destaques</span></h2>
+                <p class="section-desc">Uma amostra do que ando construindo com carinho.</p>
+            </header>
+
+            <div class="destaque-grid">
+                <!-- App -->
+                <article class="card-projeto">
+                    <div class="card-img-wrap" style="background: #F8FAFC;">
+                        <img src="img/projetos/unmobile.png" alt="UN Mobile - Aplicativo da UN Software"
+                            class="project-image">
+                    </div>
+
+                    <div class="card-body">
+                        <span class="project-company">Projeto profissional · UN Software</span>
+
+                        <h3 class="card-title">UN Mobile</h3>
+
+                        <p class="card-desc">
+                            Aplicativo desenvolvido para a <strong>UN Software</strong>, empresa onde atuo
+                            como desenvolvedora. Minha atuação está voltada ao desenvolvimento e evolução
+                            do aplicativo, contribuindo para a construção de soluções mobile.
+                        </p>
+
+                        <div class="tech-badges">
+                            <span class="badge">Flutter</span>
+                            <span class="badge">Dart</span>
+                            <span class="badge">Firebase</span>
+                        </div>
+
+                        <p class="app-availability">
+                            Disponível para <strong>iOS</strong> e <strong>Android</strong>
+                        </p>
+
+                        <div class="card-actions">
+                            <a href="https://apps.apple.com/br/app/unmobile/id6761431507?l=en-GB" target="_blank"
+                                rel="noopener" class="btn btn-primary btn-sm">
+                                App Store
+                            </a>
+
+                            <a href="https://play.google.com/store/apps/details?id=com.un.recepcao&hl=pt"
+                                target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                                Google Play
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Site -->
+                <!-- E -commerce - -->
+                <article class="card-projeto">
+
+                    <div class="card-img-wrap">
+                        <img src="img/projetos/ecommerce.jpg" alt="Projeto E-commerce">
+                    </div>
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">E-commerce</h3>
+
+                        <p class="card-desc">
+                            Sistema completo de loja virtual desenvolvido com PHP + MySQL, com painel de administrador,
+                            área do
+                            cliente, carrinho de compras e gerenciamento de produtos.
+                        </p>
+
+                        <div class="tech-badges">
+                            <span class="badge">PHP</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">HTML5</span>
+                            <span class="badge">CSS3</span>
+                            <span class="badge">XAMPP</span>
+                            <span class="badge">Session</span>
+                            <span class="badge">SQL</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="https://github.com/Lelehjustino/E-commerce_roupas" class="btn btn-ghost btn-sm">
+                                GitHub
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- API -->
+                <article class="card-projeto" data-category="api">
+                    <div class="card-img-wrap" style="background: #EFF6FF;">
+                        <img src="img/projetos/api.png" alt="CodePulse API" class="card-img">
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title">API de Pedidos</h3>
+                        <p class="card-desc">
+                            Projeto desenvolvido utilizando C#, ASP.NET Core Minimal API, Entity Framework Core e
+                            SQLite, com o
+                            objetivo de implementar uma API REST para gerenciamento de pedidos, realizando operações
+                            completas de CRUD
+                            (Create, Read, Update e Delete).
+                        </p>
+
+                        <div class="tech-badges">
+                            <span class="badge">C#</span>
+                            <span class="badge">ASP.NET Core Minimal API</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <a href="https://github.com/Lelehjustino/Api-Produtos" class="btn btn-primary btn-sm">Ver
+                                GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem;">
+                        <svg class="duck-icon" viewBox="0 0 24 24" fill="#FFE066" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12,2C10.3,2,9,3.3,9,5c0,0.6,0.2,1.2,0.5,1.7C8.1,7.2,7,8.5,7,10v1c0,0.6-0.4,1-1,1H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h0.2 c1.1,2.9,4,5,7.3,5c3.5,0,6.5-2.2,7.5-5.3c0.1-0.2,0.1-0.5,0.1-0.7c0-1.7-1.3-3-3-3h-1c-0.6,0-1-0.4-1-1v-1c0-1.7-1.3-3-3-3 C10.8,7,11.3,7,12,7c1.7,0,3,1.3,3,3v0.4c0,0.4,0.3,0.8,0.7,0.9c0.7,0.2,1.3-0.3,1.3-1c0-2.8-2.2-5-5-5V2z" />
+                            <circle cx="10.5" cy="7.5" r="1" fill="#374151" />
+                            <path
+                                d="M13,8.5c0.5,0,1,0.4,1,1v1h2c0.5,0,1,0.4,1,1c0,1.1-1.3,2-2.5,2S11.5,12.6,11.5,11.5c0-0.5,0.4-1,1-1h0.5v-1 C13,8.9,13.4,8.5,13,8.5z"
+                                fill="#FFB042" />
+                        </svg>
+                        <span style="font-weight: 600;">Letícia Dev</span>
+                    </div>
+                    <p class="footer-tagline">Mantendo o código limpo e o café quente.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-col-title">Contato</h3>
+                    <div class="footer-links">
+                        <a href="https://github.com/Lelehjustino" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/let%C3%ADcia-justino-wehbe-wehbe/"
+                            target="_blank">LinkedIn</a>
+                        <a href="mailto:lehjustinowehbe@gmail.com">lehjustinowehbe@gmail.com</a>
+                        <a href="https://wa.me/5541987945188" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="footer-year"></span> - Feito com carinho.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

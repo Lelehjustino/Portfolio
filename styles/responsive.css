@@ -1,0 +1,124 @@
+/* ============================================================
+   RESPONSIVO - responsive.css
+   ============================================================ */
+
+/* ============================================================
+   TABLETS E TELAS MÉDIAS (max-width: 992px)
+   ============================================================ */
+   @media (max-width: 992px) {
+    /* Navbar */
+    .nav-links, .nav-cta {
+      display: none;
+    }
+    
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Footer */
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-xl);
+    }
+    
+    .footer-brand {
+      grid-column: 1 / -1;
+      margin-bottom: var(--sp-md);
+    }
+  }
+  
+  /* ============================================================
+     CELULARES (max-width: 768px)
+     ============================================================ */
+  @media (max-width: 768px) {
+    
+    /* Global */
+    :root {
+      --sp-4xl: 4rem;
+      --sp-3xl: 3rem;
+      --sp-2xl: 2rem;
+    }
+  
+    /* Hero Section */
+    .hero {
+      min-height: auto;
+      padding: calc(var(--navbar-h) + var(--sp-xl)) 0 var(--sp-2xl);
+    }
+  
+    .hero-content {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: var(--sp-xl);
+    }
+  
+    .hero-desc {
+      margin: 0 auto var(--sp-xl);
+    }
+  
+    .hero-actions {
+      justify-content: center;
+    }
+  
+    .hero-photo-wrap {
+      order: -1; /* Foto aparece antes do texto no mobile */
+    }
+  
+    .duck-hero {
+      max-width: 200px;
+    }
+  
+    /* Sobre Mim */
+    .sobre-grid {
+      grid-template-columns: 1fr;
+      gap: var(--sp-xl);
+    }
+    
+    .sobre-foto-wrap {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    /* Footer */
+    .footer-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    
+    .footer-social {
+      justify-content: center;
+    }
+    
+    .footer-links {
+      align-items: center;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      gap: var(--sp-md);
+      text-align: center;
+    }
+  }
+  
+  /* ============================================================
+     TELAS PEQUENAS (max-width: 480px)
+     ============================================================ */
+  @media (max-width: 480px) {
+    /* Ajustes finos */
+    .hero-actions {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .hero-actions .btn {
+      width: 100%;
+    }
+  
+    .destaque-grid, .cards-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .filter-btn {
+      width: 100%;
+    }
+  }
+  
