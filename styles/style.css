@@ -1,14 +1,8 @@
-/* ============================================================
-   PORTFOLIO PROFISSIONAL - style.css
-   Tema: Rubber Duck Debugging (Clean, Feminino, Minimalista)
-   ============================================================ */
-
-/* --- Google Fonts Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* ============================================================
+/* 
    CSS CUSTOM PROPERTIES (Variáveis)
-   ============================================================ */
+    */
 :root {
   /* Cores principais */
   --clr-bg: #F4F3F1;
@@ -80,9 +74,9 @@
   --transition-base: 0.2s ease;
 }
 
-/* ============================================================
+/* 
    RESET E BASE
-   ============================================================ */
+    */
 *,
 *::before,
 *::after {
@@ -132,9 +126,9 @@ button {
   font-family: inherit;
 }
 
-/* ============================================================
+/* 
    SCROLLBAR CUSTOMIZADA
-   ============================================================ */
+    */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -152,9 +146,9 @@ button {
   background: #D1D5DB;
 }
 
-/* ============================================================
+/* 
    UTILITÁRIOS
-   ============================================================ */
+    */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -221,9 +215,9 @@ button {
   line-height: 1.7;
 }
 
-/* ============================================================
+/* 
    ILUSTRAÇÕES DUCK
-   ============================================================ */
+    */
 .duck-icon {
   display: inline-block;
   width: 24px;
@@ -236,9 +230,9 @@ button {
   margin: 0 auto;
 }
 
-/* ============================================================
+/* 
    BOTÕES
-   ============================================================ */
+    */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -284,9 +278,9 @@ button {
   font-size: var(--fs-xs);
 }
 
-/* ============================================================
+/* 
    BADGES DE TECNOLOGIA
-   ============================================================ */
+    */
 .tech-badges {
   display: flex;
   flex-wrap: wrap;
@@ -304,9 +298,9 @@ button {
   border: 1px solid var(--clr-border);
 }
 
-/* ============================================================
+/* 
    NAVBAR
-   ============================================================ */
+    */
 .navbar {
   position: fixed;
   top: 0;
@@ -450,9 +444,9 @@ button {
   color: var(--clr-text);
 }
 
-/* ============================================================
+/* 
    HERO SECTION
-   ============================================================ */
+    */
 .hero {
   min-height: 90vh;
   display: flex;
@@ -517,9 +511,9 @@ button {
   align-items: center;
 }
 
-/* ============================================================
+/* 
    CARDS DE PROJETO (Clean UI)
-   ============================================================ */
+    */
 .destaque-grid,
 .cards-grid {
   display: grid;
@@ -595,9 +589,9 @@ button {
   margin-top: auto;
 }
 
-/* ============================================================
+/* 
    PAGE HEADER (topo das páginas internas)
-   ============================================================ */
+    */
 .page-header {
   padding: calc(var(--navbar-h) + var(--sp-3xl)) 0 var(--sp-3xl);
   text-align: center;
@@ -619,9 +613,9 @@ button {
   margin: 0 auto;
 }
 
-/* ============================================================
+/* 
    SEÇÃO SOBRE MIM
-   ============================================================ */
+    */
 .sobre-grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -717,9 +711,9 @@ button {
   color: var(--clr-text-muted);
 }
 
-/* ============================================================
+/* 
    PROJETOS PAGE - Categorias
-   ============================================================ */
+    */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -746,9 +740,9 @@ button {
   border-color: var(--clr-text);
 }
 
-/* ============================================================
+/* 
    CONTATO
-   ============================================================ */
+    */
 .contato-section {
   background: var(--clr-white);
   border-radius: var(--radius-xl);
@@ -767,9 +761,9 @@ button {
   margin-top: var(--sp-xl);
 }
 
-/* ============================================================
+/* 
    FOOTER
-   ============================================================ */
+    */
 .footer {
   background: var(--clr-white);
   border-top: 1px solid var(--clr-border);
@@ -835,4 +829,31 @@ button {
   height: 380px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+
+/* Banner de vídeo */
+.video-banner {
+  width: 95%;
+  height: 780px;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem auto; /* Centraliza horizontalmente */
+  background: #1f2937;
+  border-radius: 16px;
+}
+
+.video-banner video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .video-banner {
+    width: 95%;
+    height: 250px;
+  }
 }
